@@ -10,6 +10,8 @@ A real-time drowsiness detection app that alerts you when your eyes have been cl
 - Webcam
 - An `alarm.mp3` file placed in the `sounds/` folder
 
+> ⚠️ **Use `mediapipe==0.10.14` specifically.** Version 0.10.15+ removed the `mp.solutions` API this project uses and will throw `AttributeError: module 'mediapipe' has no attribute 'solutions'`.
+
 ---
 
 ## Setup
@@ -26,7 +28,7 @@ python3.11 -m venv venv
 source venv/bin/activate
 
 # Install dependencies
-pip install opencv-python mediapipe numpy
+pip install opencv-python mediapipe==0.10.14 numpy
 
 # Run
 python detect.py
@@ -44,7 +46,7 @@ python -m venv venv
 venv\Scripts\activate
 
 # Install dependencies
-pip install opencv-python mediapipe numpy plyer
+pip install opencv-python mediapipe==0.10.14 numpy plyer
 
 # Run
 python detect.py
