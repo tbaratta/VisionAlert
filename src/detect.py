@@ -137,7 +137,7 @@ while True:
                             cv2.FONT_HERSHEY_SIMPLEX, 1.8, (255, 255, 255), 3)
 
             # EAR value + frame count
-            cv2.putText(frame, f"EAR: {ear:.2f}",
+            cv2.putText(frame, f"Eye Aspect Ratio: {ear:.2f}",
                         (30, 45), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
             cv2.putText(frame, f"Closed frames: {CLOSED_FRAMES}",
                         (30, h - 20), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (200, 200, 200), 1)
